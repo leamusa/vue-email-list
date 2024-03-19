@@ -7,18 +7,18 @@
     <title>Vue Email-list</title>
   </head>
   <body>
-    <div id="app" class="container p-5">
-      <ul>
-        <li v-for="email in emails" :key="email">{{ email }}</li>
-      </ul>
-    </div>
+    <body>
+        <body>
+            <div id="app" class="container p-5">
+                <h1>Email List</h1>
+                <!-- Display loading message if emailList is empty -->
+                <p v-if="emailList.length === 0">Loading...</p>
+                <!-- Display email list if emailList is not empty -->
+                <ul v-else>
+                  <li v-for="(email, index) in emailList" :key="index">{{ email }}</li>
+                </ul>
+              </div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <script src="https://unpkg.com/vue@3"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./assets/js/app.js"></script>
